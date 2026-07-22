@@ -97,6 +97,29 @@ SkillTrack-Course-Learning-Tracker
 
 ---
 
+## 📸 Screenshots
+
+### Login
+
+<img width="1365" height="765" alt="Login Page" src="https://github.com/user-attachments/assets/ac652816-3f4e-41ef-b80c-c4aa1b216706" />
+
+
+### Dashboard
+
+<img width="1365" height="767" alt="DashBoard page" src="https://github.com/user-attachments/assets/5ce60e97-3911-47c0-b8e2-6d6dee447e54" />
+
+
+### Explore Courses
+
+<img width="1361" height="761" alt="Explore Courses Page" src="https://github.com/user-attachments/assets/458b29e0-39fe-49b6-9856-7f097cacea8e" />
+
+
+### Progress Charts
+
+<img width="1171" height="409" alt="Progress Card" src="https://github.com/user-attachments/assets/ebad0c4c-2706-43cf-9db8-32bb01194c53" />
+
+
+
 # 🔐 Authentication
 
 - User Registration
