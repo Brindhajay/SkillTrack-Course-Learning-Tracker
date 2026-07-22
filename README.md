@@ -1,171 +1,216 @@
-# SkillTrack
+# 📚 SkillTrack – Course Learning Tracker
 
-SkillTrack is a small personal learning and course-progress tracker. A user can add courses from platforms like Udemy, Coursera, or YouTube, update progress, filter courses, and remove completed or unwanted records.
+A modern Full Stack Course Learning Tracker web application built using **React.js**, **Spring Boot**, **Spring Security (JWT)**, and **PostgreSQL**.
 
-This project is built for a fresher-level technical interview assignment. The main focus is a clean Spring Boot REST backend, PostgreSQL persistence, basic validation, and a simple React/Next.js frontend.
+The application helps users organize their learning journey by managing courses, tracking progress, marking favorites, and viewing analytics through an interactive dashboard.
 
-## Technologies Used
+---
 
-- Frontend: Next.js, React, TypeScript
-- Backend: Java 17, Spring Boot, Spring Data JPA, REST APIs
-- Database: PostgreSQL
-- Tools: Maven, Git, GitHub
+## 🚀 Live Demo
 
-## Features
+### 🌐 Frontend
+https://skilltrack-course-learning-tracker-1.onrender.com
 
-- Create, read, update, and delete courses
-- Search by course title or instructor
-- Filter by status and priority
-- Track platform, category, progress, dates, and notes
-- Validate required fields and progress range
-- Return meaningful backend error responses
+### ⚙️ Backend API
+https://skilltrack-course-learning-tracker.onrender.com
 
-## Project Structure
+### 📖 Swagger API
+https://skilltrack-course-learning-tracker.onrender.com/swagger-ui/index.html
 
-```text
-skilltrack/
-|- backend/      Spring Boot REST API
-|- frontend/     Next.js React UI
-`- README.md
+---
+
+# ✨ Features
+
+- 🔐 JWT Authentication (Login & Register)
+- 👤 User Profile
+- 📚 Course Management
+- ➕ Create Course
+- ✏️ Update Course
+- ❌ Delete Course
+- ❤️ Favorite Courses
+- 📈 Dashboard Analytics
+- 🔍 Search Courses
+- 🎯 Course Progress Tracking
+- 📊 Learning Statistics
+- 🗄 PostgreSQL Database
+- 📱 Responsive UI
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React.js
+- Vite
+- React Router
+- Axios
+- Bootstrap
+- CSS
+
+## Backend
+
+- Java 17
+- Spring Boot 3
+- Spring Security
+- JWT Authentication
+- Spring Data JPA
+- Hibernate
+- Maven
+
+## Database
+
+- PostgreSQL (Neon)
+
+## Deployment
+
+- Render (Frontend)
+- Render (Backend)
+- Neon PostgreSQL
+
+---
+
+# 📂 Project Structure
+
+```
+SkillTrack-Course-Learning-Tracker
+│
+├── backend
+│   ├── controller
+│   ├── service
+│   ├── repository
+│   ├── entity
+│   ├── dto
+│   ├── config
+│   └── security
+│
+├── frontend
+│   ├── components
+│   ├── pages
+│   ├── layouts
+│   ├── services
+│   ├── context
+│   └── assets
+│
+└── README.md
 ```
 
-## Backend Flow
+---
 
-The frontend sends a request to the REST controller. The controller receives the request DTO and passes it to the service. The service applies business rules, such as progress validation and date validation. Then the repository communicates with PostgreSQL through Spring Data JPA. The backend returns a response DTO to the frontend.
+# 🔐 Authentication
 
-Simple explanation:
+- User Registration
+- User Login
+- JWT Token Generation
+- Protected Routes
+- Spring Security Authorization
 
-```text
-React UI -> REST Controller -> Service -> Repository -> PostgreSQL
+---
+
+# 📊 Dashboard
+
+The dashboard provides:
+
+- Total Courses
+- In Progress Courses
+- Completed Courses
+- Average Progress
+- Recent Courses
+- Continue Learning Section
+
+---
+
+# 📚 Course Features
+
+- Add Course
+- Edit Course
+- Delete Course
+- Search Course
+- Favorite Course
+- Progress Tracking
+
+---
+
+# 🗄 Database
+
+- PostgreSQL
+- Hosted on Neon
+- Spring Data JPA
+- Hibernate ORM
+
+---
+
+# ⚙ Backend APIs
+
+### Authentication
+
+```
+POST /api/auth/register
+POST /api/auth/login
 ```
 
-## Main Entity
+### Dashboard
 
-The main entity is `Course`.
-
-Important fields:
-
-- `title`
-- `instructor`
-- `platform`
-- `category`
-- `status`: `PLANNED`, `IN_PROGRESS`, `COMPLETED`, `ON_HOLD`
-- `progressPercentage`: `0` to `100`
-- `priority`: `LOW`, `MEDIUM`, `HIGH`
-- `startDate`
-- `targetCompletionDate`
-- `notes`
-
-## API Summary
-
-Base URL:
-
-```text
-http://localhost:8081/api
+```
+GET /api/dashboard
 ```
 
-| Method | Endpoint | Description |
-| --- | --- | --- |
-| `GET` | `/courses` | Get all courses |
-| `GET` | `/courses?search=java` | Search by title or instructor |
-| `GET` | `/courses?status=IN_PROGRESS` | Filter by status |
-| `GET` | `/courses?priority=HIGH` | Filter by priority |
-| `GET` | `/courses/{id}` | Get one course |
-| `POST` | `/courses` | Create a course |
-| `PUT` | `/courses/{id}` | Update a course |
-| `DELETE` | `/courses/{id}` | Delete a course |
+### Courses
 
-Example create request:
-
-```json
-{
-  "title": "Spring Boot REST APIs",
-  "instructor": "John Doe",
-  "platform": "Udemy",
-  "category": "Backend",
-  "status": "IN_PROGRESS",
-  "progressPercentage": 40,
-  "priority": "HIGH",
-  "startDate": "2026-07-13",
-  "targetCompletionDate": "2026-07-25",
-  "notes": "Focus on controller, service, repository flow."
-}
+```
+GET /api/courses
+POST /api/courses
+PUT /api/courses/{id}
+DELETE /api/courses/{id}
 ```
 
-## PostgreSQL Setup
+---
 
-Create the database:
+# 🚀 Getting Started
 
-```sql
-CREATE DATABASE skilltrack_db;
+## Clone Repository
+
+```bash
+git clone https://github.com/Brindhajay/SkillTrack-Course-Learning-Tracker.git
 ```
 
-The application uses this default connection:
-
-```text
-jdbc:postgresql://localhost:5432/skilltrack_db
-username: postgres
-```
-
-For the password, create this file:
-
-```text
-backend/src/main/resources/application-local.properties
-```
-
-Add your local PostgreSQL password:
-
-```properties
-spring.datasource.password=YOUR_POSTGRES_PASSWORD
-```
-
-The real `application-local.properties` file is ignored by Git so your password is not uploaded.
-
-## Run Backend
-
-Open `backend` in IntelliJ and run `SkillTrackApplication`.
-
-Or run from terminal:
+## Backend
 
 ```bash
 cd backend
 mvn spring-boot:run
 ```
 
-The backend runs on:
-
-```text
-http://localhost:8081
-```
-
-## Run Frontend
-
-Open `frontend` in VS Code.
-
-Install dependencies if needed:
+## Frontend
 
 ```bash
+cd frontend
 npm install
-```
-
-Run the frontend:
-
-```bash
 npm run dev
 ```
 
-The frontend runs on:
+---
 
-```text
-http://localhost:3000
-```
+# 📸 Screenshots
 
-## Interview Explanation
+- Login Page
+- Dashboard
+- Explore Courses
+- Favorites
+- Create Course
+- Profile
 
-I chose SkillTrack because it is a small but practical app. It is not only a basic movie or notes app. It still has a simple scope, but it shows real backend understanding: CRUD APIs, DTOs, service-layer validation, repository/database usage, search, filters, and error handling.
+---
 
-PostgreSQL is used as the database. Since the app uses Spring Data JPA, most database operations are handled through the repository, so the code is similar to using MySQL with JPA.
+# 👩‍💻 Developer
 
-## AI and References
+**Brindha R A**
 
-AI assistance was used for planning, implementation guidance, and explanation. Official Spring Boot, PostgreSQL, and Next.js documentation were used as references. The code is kept simple so the workflow can be explained clearly during the technical discussion.
+GitHub:
+https://github.com/Brindhajay
+
+---
+
+# 📄 License
+
+This project is developed for learning and portfolio purposes.
