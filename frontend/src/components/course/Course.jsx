@@ -12,7 +12,7 @@ import {
     FaStar
 } from "react-icons/fa";
 
-import "./course.css";
+import "./Course.css";
 
 function Course({ course }) {
 
