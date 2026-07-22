@@ -1,21 +1,28 @@
 # 📚 SkillTrack – Course Learning Tracker
 
-A modern Full Stack Course Learning Tracker web application built using **React.js**, **Spring Boot**, **Spring Security (JWT)**, and **PostgreSQL**.
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen)
+![React](https://img.shields.io/badge/React-19-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-blue)
+![Render](https://img.shields.io/badge/Deploy-Render-purple)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-The application helps users organize their learning journey by managing courses, tracking progress, marking favorites, and viewing analytics through an interactive dashboard.
+A modern Full Stack Course Learning Tracker web application built using **React.js**, **Spring Boot**, **Spring Security (JWT)**, and **PostgreSQL**.
 
 ---
 
 ## 🚀 Live Demo
 
-### 🌐 Frontend
+🌐 **Frontend:**  
 https://skilltrack-course-learning-tracker-1.onrender.com
 
-### ⚙️ Backend API
+⚙️ **Backend:**  
 https://skilltrack-course-learning-tracker.onrender.com
 
-### 📖 Swagger API
+📖 **Swagger API:**  
 https://skilltrack-course-learning-tracker.onrender.com/swagger-ui/index.html
+
+---
 
 ---
 
