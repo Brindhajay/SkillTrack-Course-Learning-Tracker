@@ -19,7 +19,8 @@ public class CorsConfig {
         // Allow React development servers
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:5173",
-                "http://localhost:5174"
+                "http://localhost:5174",
+                "https://skilltrack-course-learning-tracker-1.onrender.com"
         ));
 
         // Allow all HTTP methods used by the application
