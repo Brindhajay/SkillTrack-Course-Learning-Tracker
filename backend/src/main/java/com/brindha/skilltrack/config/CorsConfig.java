@@ -16,33 +16,11 @@ public class CorsConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        // Allow React development servers
-        configuration.setAllowedOrigins(List.of(
-                "http://localhost:5173",
-                "http://localhost:5174",
-                "https://skilltrack-course-learning-tracker-1.onrender.com"
-        ));
-
-        // Allow all HTTP methods used by the application
-        configuration.setAllowedMethods(List.of(
-                "GET",
-                "POST",
-                "PUT",
-                "PATCH",
-                "DELETE",
-                "OPTIONS"
-        ));
-
-        // Allow all request headers
+        configuration.setAllowedOriginPatterns(List.of("*"));
+        configuration.setAllowedMethods(List.of("*"));
         configuration.setAllowedHeaders(List.of("*"));
-
-        // Expose headers if needed
-        configuration.setExposedHeaders(List.of(
-                "Authorization"
-        ));
-
-        // Allow cookies / Authorization header
-        configuration.setAllowCredentials(true);
+        configuration.setExposedHeaders(List.of("*"));
+        configuration.setAllowCredentials(false);
 
         UrlBasedCorsConfigurationSource source =
                 new UrlBasedCorsConfigurationSource();
