@@ -1,0 +1,22 @@
+# Java / Spring Boot
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Editors and operating system files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Environment files and secrets
+.env
+.env.*
+!*.example
+backend/src/main/resources/application-local.properties
+frontend/.env.local

@@ -1,0 +1,57 @@
+/* ===========================
+   Explore.css
+=========================== */
+
+.courses-page{
+    padding:35px;
+    min-height:100vh;
+    background:#F8FAFC;
+}
+
+.courses-page h2{
+    font-size:34px;
+    color:#1E293B;
+    margin-bottom:30px;
+    font-weight:700;
+}
+
+.courses-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+    gap:28px;
+}
+
+.no-course{
+    grid-column:1/-1;
+    text-align:center;
+    padding:80px 20px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.no-course h3{
+    color:#475569;
+    margin-bottom:10px;
+}
+
+.no-course p{
+    color:#94A3B8;
+}
+
+@media(max-width:768px){
+
+    .courses-page{
+        padding:20px;
+    }
+
+    .courses-page h2{
+        font-size:28px;
+    }
+
+    .courses-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+}

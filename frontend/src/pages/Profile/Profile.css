@@ -1,0 +1,137 @@
+/* ===========================
+   Profile.css
+=========================== */
+
+.profile-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+}
+
+.profile-banner {
+  height: 180px;
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+}
+
+.profile-content {
+  padding: 35px;
+  margin-top: -70px;
+}
+
+.profile-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #fff;
+  border: 6px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  font-size: 32px;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.profile-email {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.profile-box {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.profile-box h4 {
+  color: #94a3b8;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.profile-box p {
+  color: #1e293b;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile-actions {
+  margin-top: 35px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.edit-btn {
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  color: #fff;
+  padding: 13px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.logout-btn {
+  border: none;
+  background: #ef4444;
+  color: #fff;
+  padding: 13px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.edit-btn:hover {
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.35);
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 20px;
+  }
+
+  .profile-content {
+    padding: 25px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .edit-btn,
+  .logout-btn {
+    width: 100%;
+  }
+}

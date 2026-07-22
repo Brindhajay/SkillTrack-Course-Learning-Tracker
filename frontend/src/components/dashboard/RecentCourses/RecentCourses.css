@@ -1,0 +1,62 @@
+.recent-courses{
+    margin-top:30px;
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.recent-courses h3{
+    margin-bottom:20px;
+    color:#1E293B;
+}
+
+.recent-courses table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.recent-courses th{
+    text-align:left;
+    padding:15px;
+    background:#F8FAFC;
+    color:#475569;
+}
+
+.recent-courses td{
+    padding:15px;
+    border-bottom:1px solid #E2E8F0;
+}
+
+.status{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.completed{
+    background:#DCFCE7;
+    color:#15803D;
+}
+
+.in-progress{
+    background:#FEF3C7;
+    color:#B45309;
+}
+
+.planned{
+    background:#DBEAFE;
+    color:#1D4ED8;
+}
+.empty-state{
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#64748B;
+
+    font-size:16px;
+
+}

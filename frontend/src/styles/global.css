@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+/* =====================================
+   GLOBAL GLOW UI
+   Add in global.css
+===================================== */
+
+:root {
+  --primary: #6366f1;
+  --secondary: #4338ca;
+  --accent: #8b5cf6;
+
+  --bg: #f8fafc;
+  --card: #ffffff;
+
+  --text: #1e293b;
+  --sub: #64748b;
+
+  --shadow: 0 15px 35px rgba(99, 102, 241, 0.18);
+
+  --shadow-hover: 0 20px 50px rgba(99, 102, 241, 0.28);
+
+  --glow:
+    0 0 10px rgba(99, 102, 241, 0.25), 0 0 25px rgba(99, 102, 241, 0.2),
+    0 0 45px rgba(99, 102, 241, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc, #f5f3ff);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========================= */
+
+.card,
+.course-card,
+.stat-card,
+.profile-card,
+.learning-card,
+.favorite-card,
+.create-course-card,
+.dashboard-chart,
+.dashboard-section {
+  background: rgba(255, 255, 255, 0.9);
+
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(99, 102, 241, 0.15);
+
+  box-shadow: var(--shadow);
+
+  transition: 0.35s;
+}
+
+.card:hover,
+.course-card:hover,
+.stat-card:hover,
+.profile-card:hover,
+.learning-card:hover,
+.favorite-card:hover,
+.create-course-card:hover,
+.dashboard-chart:hover,
+.dashboard-section:hover {
+  transform: translateY(-8px);
+
+  box-shadow: var(--shadow-hover), var(--glow);
+}
+
+/* ========================= */
+
+button {
+  transition: 0.35s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+/* ========================= */
+
+.save-btn,
+.login-btn,
+.register-btn,
+.enroll-btn,
+.primary-btn,
+.view-btn,
+.continue-btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #4338ca);
+
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+}
+
+.save-btn:hover,
+.login-btn:hover,
+.register-btn:hover,
+.enroll-btn:hover,
+.primary-btn:hover,
+.view-btn:hover,
+.continue-btn:hover {
+  box-shadow:
+    0 0 12px rgba(99, 102, 241, 0.5),
+    0 0 30px rgba(99, 102, 241, 0.35),
+    0 0 60px rgba(99, 102, 241, 0.22);
+}
+
+/* ========================= */
+
+.favorite-btn,
+.nav-icon {
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.25);
+}
+
+.favorite-btn:hover,
+.nav-icon:hover {
+  box-shadow:
+    0 0 10px #6366f1,
+    0 0 25px #6366f1,
+    0 0 45px #8b5cf6;
+}
+
+/* ========================= */
+
+input,
+select,
+textarea {
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #6366f1;
+
+  box-shadow:
+    0 0 8px rgba(99, 102, 241, 0.35),
+    0 0 18px rgba(99, 102, 241, 0.18);
+}
+
+/* ========================= */
+
+.sidebar {
+  box-shadow: 8px 0 40px rgba(67, 56, 202, 0.3);
+}
+
+/* ========================= */
+
+.navbar {
+  box-shadow: 0 5px 30px rgba(99, 102, 241, 0.1);
+}
+
+/* ========================= */
+
+.course-image img {
+  transition: 0.45s;
+}
+
+.course-card:hover .course-image img {
+  transform: scale(1.08);
+}
+
+/* ========================= */
+
+.progress-fill {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+
+  box-shadow: 0 0 12px #8b5cf6;
+}
+
+/* ========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#6366f1, #8b5cf6);
+
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 15px #8b5cf6;
+}

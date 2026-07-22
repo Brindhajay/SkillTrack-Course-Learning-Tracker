@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+.login-container {
+  display: flex;
+
+  min-height: 100vh;
+}
+
+.login-left {
+  flex: 1;
+
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: white;
+
+  padding: 60px;
+}
+
+.brand {
+  max-width: 450px;
+}
+
+.brand h1 {
+  font-size: 52px;
+
+  margin-bottom: 20px;
+}
+
+.brand h2 {
+  font-size: 34px;
+
+  margin-bottom: 20px;
+}
+
+.brand p {
+  line-height: 1.8;
+
+  font-size: 18px;
+}
+
+.login-right {
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #f8fafc;
+}
+
+.login-card {
+  width: 420px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h2 {
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  color: #666;
+
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+
+  font-weight: 600;
+}
+
+.form-group input {
+  height: 50px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 12px;
+
+  padding: 0 15px;
+
+  font-size: 16px;
+}
+
+.form-group input:focus {
+  outline: none;
+
+  border-color: #4f46e5;
+}
+
+.login-btn {
+  width: 100%;
+
+  height: 50px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #4f46e5;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #4338ca;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.switch-btn {
+  margin-left: 8px;
+  border: none;
+  background: #4f46e5;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.switch-btn:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    flex: 1;
+  }
+}
