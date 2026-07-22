@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-    getProfile,
-    updateProfile,
-    changePassword
-} from "../../services/profileService";
+import { getProfile, updateProfile, changePassword } from "../../services/ProfileService";
 import "./Profile.css";
 
 function Profile() {
