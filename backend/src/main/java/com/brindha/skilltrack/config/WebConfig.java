@@ -16,7 +16,7 @@ public class WebConfig implements WebMvcConfigurer {
                         "http://localhost:5174",
                         "https://skilltrack-course-learning-tracker-1.onrender.com"
                 )
-			.allowedMethods("GET", "POST", "PUT", "DELETE")
+                .allowedMethods("*")
 			.allowedHeaders("*");
 	}
 }
