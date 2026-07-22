@@ -99,6 +99,12 @@ SkillTrack-Course-Learning-Tracker
 
 ## 📸 Screenshots
 
+
+### Register
+
+<img width="1365" height="752" alt="Register Page" src="https://github.com/user-attachments/assets/f1f50c95-68bf-4a8a-b740-6ab4c8cd6bcc" />
+
+
 ### Login
 
 <img width="1365" height="765" alt="Login Page" src="https://github.com/user-attachments/assets/ac652816-3f4e-41ef-b80c-c4aa1b216706" />
