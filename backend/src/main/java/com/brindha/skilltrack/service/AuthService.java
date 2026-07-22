@@ -69,6 +69,18 @@ public class AuthService {
 
     public AuthResponse login(LoginRequest request){
 
+        System.out.println("===== LOGIN START =====");
+        System.out.println("Email: " + request.email());
+
+        authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(
+                        request.email(),
+                        request.password()
+                )
+        );
+
+        System.out.println("===== AUTH SUCCESS =====");
+
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         request.email(),
